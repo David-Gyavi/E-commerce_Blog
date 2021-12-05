@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'checkout',
     
     
+    
 
 
     # Other
@@ -179,6 +180,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51K2yXaJPAQhAIeGiK1RIbU4KvYonBvlUc73mX81p8sy9JbvtozqeBSFZXQ1mhIDCVV4mSXO2LQ3npNx5Qy5MrTDj00A3pmOW8f')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51K2yXaJPAQhAIeGi4JAattJ8uyT1FhdlUNRWZx5x4FUXFnd898CcYqHFWRPxVXwedHWUZuG40fmyEVdrHZ1qabV300ZD5lnjyC')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_Ze3qPKtv76vxh6NqscJo6DAr7M8kBCxl')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
