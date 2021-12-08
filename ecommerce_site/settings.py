@@ -123,10 +123,14 @@ WSGI_APPLICATION = 'ecommerce_site.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-   'default': {
+    'default': {
        'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       }
+}
+
+DATABASES = {
+    'default': dj_database_url.parse('postgres://tqcavrftabvoju:c296a87a254e7acabef115474c82283fce461352edb6889a83d96e49b7c31061@ec2-176-34-105-15.eu-west-1.compute.amazonaws.com:5432/d19crst2agepph')
 }
 
 
