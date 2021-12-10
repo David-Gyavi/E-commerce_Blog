@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$c&=^l3u5)s%-bw0y)f7510xvt1cj%uc(1s4#%e!088=!07ns$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kelly-ecommerce-blog.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['kellyd-ecommerce-blog.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -123,12 +123,17 @@ WSGI_APPLICATION = 'ecommerce_site.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASES_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 
