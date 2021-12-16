@@ -138,10 +138,6 @@ Below I will explain more why I choose the various colors and for what I will be
 
 ![Color Palette](wireframes/color-palette.png)
 
-* #ffffff: I have decided to keep the background of the overall website white in order give the clean look. I will also use this color as text color for the nav bar and buttons.
-* #D9D9D9: This color I will use as a background color for whole dashboard. 
-* #F5F5F5: This color I will use as a background color for the logs on the dashboard in order to have a small contract versus #D9D9D9 dashboard color.
-* #284B63: This will be the color that I will use for my navigation bar and buttons in order to give a bit of color to the website. This color will also be used as the overall text color.
 
 I have used a contrast checker in order to make sure that the contrast is sufficient.
 This way my content will be easily readable. 
@@ -320,4 +316,218 @@ Feedback provided to the user stands out nicely.
 
 * **Verdict**    
 The test has passed all the criteria and works like planned.
+
+
+### **Profile Product**
+
+#### User story: As a user, I would like to have a personal profile for my product. 
+
+* **Plan**  
+The user should be able to created a profile for the product in which it can fill in various information. 
+Possible input fields should be the name of the product, description and an image of the product. 
+A summary of the dog profile will be displayed on the dashboard overview. 
+
+* **Implementation**  
+I have created a form with the various input fields where the user can fill in the information. 
+I have only made the product_name field required as for the other fields, the user might not want to fill in this information. Some user might not know the date of birth etc so he/she might not want to fill this in. 
+For the image, I worked with an url that has to be filled in. The product image can be easily uploaded by user from its device and/or cloud.
+The user can also use the AWS web tier to make changes like uploading media file to the project and many more. 
+The user is given a chance to make choice of which item he would buy as wel as the user would be able checkout for the products he has bought. 
+
+* **Test**  
+I have tested the add product, signin, signout form various times to make sure they work properly.
+The input is stored correctly in the product collections.  
+Shop now button works as planned and takes the user to the page after resolving some issues. See [Bugs](#bugs)
+In order to display the correct product for the user, I have addded the _id of the user as a hidden inputfield for the add product which is stored in the database.
+
+When testing this on mobile devices (iPhoneSE and iPhone8), I noticed that the datepicker was not working how it should.
+After conducting various reseach, I have come up with solution which you can find under [Bugs](#bugs).
+ 
+After various testing, I came to the conclusion that it didn't make sense that the user could able to add product profiles with the same name.
+When the user adds a product, I now first check if the user already has a product profile with that name and the correct feedback is being shown to the user. 
+Implementing this, brought another issue along with the cancel update in case the user has more than 1 product already added to its profile. 
+When the user now wants to create another profile with the same name, receives feedback that the profile already exists and then clicks 'cancel', 
+the user will be taken to the profile for which he/she wanted to create a profile. 
+
+* **Result**  
+Adding a profile for the product works as planned and looks good across various browsers and devices.  
+Upon submitting the form, the input is stored correctly in the database. 
+
+* **Verdict**  
+The test has passed all the criteria and works like planned.
+
+### **Dashboard**
+
+#### User story: As a user, I would like to have a dashboard where I can have a good overview. 
+
+* **Plan**  
+I would like to create a dashboard where the user can see the profile of the products on the navbar. 
+On small devices the profile will be displayed on top of the page with the logs of the products below. 
+Whenever the user has multiple products, I want that the user is able to select the profile that should be displayed on the dashboard. 
+This will be displayed above the product profile on small devices and on top of the dashboard for large screen. 
+The dashboard should be very clear and intuitive to use.   
+
+When the user doesn't have any product yet added to its user account, a blank dashboard will be displayed with a very clear call-to-action to add the first product. 
+On the place where normally the logs would show, I will the following text: "After you added your products, come here to start tracking!"
+
+* **Implementation**  
+My dashboard exists out of several of  main parts, the search box, my Account and the bag plus the nav links display. 
+
+    *Product profile*  
+    Here it shows all the submitted information about the product, including the button shop now which gives a personal feeling to the user. 
+    When the user hasn't filled in the url, it shows 'Click here to add an image' which takes the user to the products page. 
+    Left on top it has a a logo "ECOMMERCE SITE" where the user can click and goes back to the home page. 
+    Below the profile it shows an edit button and a delete button. 
+    When the user doesn't have a dog added yet, it will display an empty profile with a call-to-action to add a dog profile.
+
+    *Logs display*   
+    The logs that will be displayed are from the products profile selected. 
+    When no product profile is added yet, here it will show that as soon as they added a dog, they can come here to start tracking.
+    When a product profile is added but no logs are submitted yet, it shows 'Click here or on the add button right below to add your first log" which takes you to the logs page. 
+    From the moment the user has at least submitted 1 log, another button will appear above the logs with the following text: Click here to search logs by date'. 
+    This will take the user to the search logs page where a search can be performed and updated. 
+    For medium devices and up I have included a floating action button which is displayed right below on the screen. 
+    Even if the user is in the middle of the screen, the button will be displayed, giving the user the possibility the add a log without having to scroll up to the top. 
+    The floating action button will be hidden on small screens and a normal button will appear on below the search button. 
+    I have implemented this because the floating action button was appearing on top of the product profile which might have confused the user with the add another product button. 
+
+    Whenever the user has more than 1 product in its bag, a select element will appear above the top right corner of the dashboard saying: "Selected successfully". 
+    Here the names of all the product that the user has will be displayed. 
+    When the user clicks on the name, the form will be submitted (without submit button, by using javascript) and the profile and logs of that product will be displayed on the dashboard. 
+
+* **Test**  
+The correct dashboard is being displayed depending on if the user has already added a product profile.
+When the dashboard is being displayed after registring and adding the first product profle, the correct profile is being displayed under product profile. 
+Under logs the text to add first log is being displayed correctly.  
+From the moment the user adds a first log, the log is being displayed nicely on the screen with nice focus on the date to make the dashboard more appealing. 
+The text to add first log disappears and the button to search logs by date appears nicely above the log. 
+When multiple logs have been added, the logs are ordered by log date with the most recent one first.  
+On small devices the floating action button disappears and a normal button appears right below the search button. 
+
+When the user has added more than 1 product, the select box appears above the dashboard, allowing the user to select the profile that should be displayed on the dashboard. 
+
+During testing I noticed that the order of logs was not correct. In manage.py I sorted the logs by with the most recent first. 
+This was not going correctly as I had set a different format for the date, with the month written in full. 
+The logs were being sorted incorrectly because of this. See [Bugs](#bugs) for the solution to this problem.
+
+I also had a problem of error server 500 which was comming from the base.html template about the add_profile and it was supposed to be profile bt I was helped by the tutor
+and the credit goes to them I could not fix it however it looks easy.
+
+* **Result**  
+The dashboard looks as planned across various browers and devices. 
+All the functionalities work as planned and the correct information is being displayed on the screen. 
+Hiding the floating action button on small devices works well and improves the user experience. 
+After resolving the issue with the date format, the logs are being sorted correctly. 
+
+* **Verdict**  
+The test has passed all the criteria and works like planned.
+
+### **Search Logs**
+
+#### User story: As a user, I want to be able to search on date to get specific data. 
+
+* **Plan**  
+After a while the user will have a lot of logs which will make it more complicated to find a certain log. 
+I want the user to be able to filter on the logs depending on the log date to make it easier find a certain log. 
+In the future I would also like to add pagination to the logs so it doesn't look like an endless list of logs. See [Features to be implemented](#features-to-be-implemented)
+Currently I don't have the required skills or knowledge for this so I will only implement the search function.
+But this will be for the feature implemented As the log_date is a required field for adding a log, the user will be able to search for all the logs. 
+
+* **Implementation**  
+As of the moment the user has added at least 1 log for the products profile, a button will appear on top where the user can click to go to the search logs page.   
+If there was no log found with that logs date, the following message will appear: 
+"There are no logs for this date". 
+After this, the user can either search on another date or return to the dashboard. 
+
+The user also has the option to edit or delete a log after searching it. After they edited or deleted the log, the user will be taken back to the dashboard of the relevant product. 
+
+* **Test**  
+When I implemented the above strategy, I noticed that the logs of other products where showing as well with the same products. 
+In my function I have included the product_id in order to only display the logs of that date of the relevant products. 
+When no logs are found, the correct message is being displayed on the screen. 
+The shop now button to take the user to the product page works as planned and the dashboard of the products for which you were performing the search is being loaded. 
+
+When you click a day, it is clear you still have to click search in order to see the results.
+See [Features to be implemented](#features-to-be-implemented) for further explanation. 
+
+* **Result**  
+The search logs page works as planned across various browsers and devices. 
+Search function works as planned and return the correct logs or feedback message depending on the user input. 
+Button to take the user back to the relevant dashboard functions as planned. 
+
+* **Verdict**  
+The test has passed all the criteria and works like planned.
+
+### **Multiple product profiles**
+
+#### User story: As a user, I want to be able to add another product.
+
+* **Plan**  
+As some users might have multiple product, it is a good user experience that they can have all their dogs under 1 account instead having to create multiple user accounts. 
+On the dashboard under product profile, a button will be dislayed left on top where the user can click to add another product. 
+This will take the user to the add dog page, same page as where the user was redirected to after registering.
+A cancel button will be displayed in case the user doesn't want to proceed with adding another product.
+
+* **Implementation**  
+The form is the same one as when the user created a first product profile.
+The main difficulty of having multiple product per user, was the display on the dashboard. 
+In the end I have decided to add a select box above the profile whenever the user has more than 1 product added to the profile. 
+In the select box I added a default option with the text: Select the product profile you want to see. 
+The option that the user can choose will depend on the amount of dogs added to the profile, the names of the dogs will be displayed as the value. 
+
+    In order to accomplish the above, I have decidede to add the product_id to the dashboard url. 
+    Whenever the user clicks on the product name in the select box, the form will automatically submit (with the help of javascript) and load the dog profile and logs of the selected product. 
+    Implementing the above solution meant as well that I had to rewrite a big part of my other functions. 
+    This to make sure that everytime there was a redirect to the dashboard, the correct dog_id had to be included. 
+
+    When the user signs in, the dashboard that will be displayed will be the first one that was loaded in the product collection of the database. 
+
+* **Test**  
+After I had implemented the above solution, I had to test all the other functionalities as well to make sure the correct dog profile was being displayed on the dashboard. 
+Whenever the user has more than 1 product, the select box is being displayed with the product names that the user has created. 
+Upon clicking the product name for which the user would like to see the dashboard, the form is submitted and the correct info is being displayed. 
+When the user removes the previously last product (and has only 1 product remaining), the select box disappears and profile of the remaining product is displayed. 
+I made sure that whenever a new log was added, edited or deleted, the dashboard of the relevant product kept on being displayed on the screen. 
+
+When testing on other devices (iPhone SE and iPhone8 in this case), we noticed that the select box was not working properly. 
+This is was the same issue as I had for the datepicker. See solution under [Bugs](#bugs)
+
+* **Result**  
+Having multiple product on the profile was a big challenge which has taken a lot of time and testing. 
+The functionality is now working as planned across various devices and browsers. 
+The select box appears nicely like planned above the dashboard.
+
+* **Verdict**  
+The test has passed all the criteria and works like planned.
+
+### **Edit log and product profile**
+
+#### User story: As a user, I want to be able to edit the product profile / As a user, I want to have the possibility to edit a log when I made a mistake or want to add some info. 
+
+* **Plan**  
+The user has to be able to edit an existing log and dog profile when a mistake was made or when the user wants to add certain information. 
+Here it is important that the information that the user inserted before remains intact and will be displayed on the page in order to have a good user experience. 
+Every log and dog profile will have an edit button which will take the user to the editlog or editprofile screen. 
+
+* **Implementation**  
+For this functionality I used the same product-form / log-form.  
+I have used a variable (add) to make the difference between adding and editing a product/log. 
+When add is not equal to True, I added a value attribute with the previous filled in information. 
+By implementing this, I have managed to merge the add and edit form into 1 form which simplifies my code. 
+The value of the input fields will already be filled in with the information that the user has inserted before. 
+When the user submits the form, all the fields will be updated in the relevant collection in the database. 
+In order to make this function work, I had to include the product_id for the edit product profile and the log_id for the edit log profile. 
+This way I made sure that the correct profile or log was updated. 
+
+* **Test**  
+I have tested the edit functionality various times to make sure the data was being updated correctly. 
+After the submission of the form, the user is being redirected to the dashboard of the product for which the changes were made. 
+Cancel button also takes the user back to the dashboard in case the user doesn't want to proceed with the changes.
+
+I noticed when testing that when the user would edit a product profile and change the product name to an already existing dog profile name, the user would still have 2 product profiles with the same name. 
+Also here I now first check to see if the product name already exists in the database for this user and if so, feedback is provided to the user and the form is not being processed. 
+The user can either choose a different name or cancel to go back to the dashboard. I still ran in quite some difficulties when implementing this. You can find more information in [Bugs](#bugs).
+
+
+
 
