@@ -1,6 +1,6 @@
 # **E-Commerce-Blog**
 
-![different_screen](media)
+![image](different_screen)
 
 ## **Goal for this project**
 
