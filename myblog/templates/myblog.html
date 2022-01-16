@@ -14,7 +14,7 @@
 <div class="col text-center mt-3">
 <h2 class="logo-font">Blogs</h2>
 {% for c in current_categories %}
-<a class="category-badge text-decoration-none" href="{% url 'home' %}?category={{ c.name }}">
+<a class="category-badge text-decoration-none" href="{% url 'myblog' %}?category={{ c.name }}">
 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
 </a>
 {% endfor %}
@@ -27,7 +27,7 @@
          <h2 class="card-title">{{ post.title }}</h2>
          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
          <p class="card-text">{{post.content|slice:":200" }}</p>
-         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+         <a href="{% url 'blog_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
       </div>
    </div>
    {% endfor %}
