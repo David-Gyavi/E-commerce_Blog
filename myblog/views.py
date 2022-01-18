@@ -35,7 +35,7 @@ class AddCommentView(CreateView):
             user = User.objects.get(username='kato1')
             # save the form but don't commit it
             form.save(commit=False)
-            form.user=user
+            form.user = user
             form.post_id = post[0].post_id
             form.save()
         return super().form_valid(form)
