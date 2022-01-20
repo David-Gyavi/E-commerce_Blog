@@ -258,6 +258,7 @@ Superusers can edit or deleted, and add products due to administration access
 #### Add Product Page
 
 This page is found from an admin only option under the My Account Menu
+
 ![image](https://user-images.githubusercontent.com/58527807/150418221-9e219632-6f8d-4dfe-8baf-79f832ce37b2.png)
 
 The page has the ability for the user to enter a new product.
