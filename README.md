@@ -163,7 +163,55 @@ The reason why I choose Materiaize is mainly due to the various features they of
 <a></a>
 
 <a></a>
+# Features
 
+## Implemented Features.
+
+**Navbar**
+
+-   The navbar has the search bar implemented so the user can search at all times when required to find the item they want. The users can use keywords that will help with the search.
+-   The navbar has collapsible options available when selecting different options available e.g. products.
+-   The navbar is fixed this will be a better user experience when navigation via the website.
+-   The main site logo links the page back to the home screen if the user wants that option to start from the beginning of the website.
+-   When the user’s login the dropdown for my account is different on the website e.g. logout view history to register and login.
+-   The users also see the items in the basket and the amount it’s going to cost so they can keep track of the website.
+-   If the user selects one of the dropdowns menus, they will have access to the list of options the hover ability has not been implemented for this option to make sure the site is cleaner and the users only get the options they want when selected.
+![image](https://user-images.githubusercontent.com/58527807/150335824-d2ef8d59-b47b-4239-956d-2ace97de27f5.png)
+On mobile devices the navbar is more consolidated and some options are placed into a sidebar menu.
+
+![image](https://user-images.githubusercontent.com/58527807/150336490-c27887f7-0beb-48ea-86e1-fe3b9f989bd9.png)
+### Promo bar
+![image](https://user-images.githubusercontent.com/58527807/150336747-c2df89e5-e91d-4168-9570-81d7aa4bb209.png)
+
+### Home Page
+Below the navbar is a promo bar. It contains product sorting dropdown menus and a promotional text; at this time, it is FREE DELIVERY ON ORDERS OVER £50!
+-   The home page has a Orange picture for the background available on the website for interest of potential customers and a link that goes to that web page which is a blck button and  white text for good attraction.
+-   Users can select all the options from the drop downs in the nav bar section.
+-   Contact details have been added for the website if required to get in touch.
+-   The text adjusts to be full width on mobile devices so the SHOP NOW button is still in view
+
+![image](https://user-images.githubusercontent.com/58527807/150337680-c8202e74-eb49-416b-a7db-77ce15705db2.png)
+
+### Search Bar
+
+-   The search page displays all products when using keywords associated with the items.
+-   The search results will display the number of items it has found.
+-   The products will be displayed as cards, as per the product views.
+-   For small devices the search icon makes the search input appear so the user can have almost the full width r entering their search terms.
+-   
+![image](https://user-images.githubusercontent.com/58527807/150340311-b4ee1f6d-6c4a-462a-93de-7b8a819c21d1.png)
+![image](https://user-images.githubusercontent.com/58527807/150341704-810dd90a-229f-4978-b174-e780af7f8d11.png)
+
+
+<a></a>
+
+
+
+[Back to Top](#table-of-contents)
+
+
+<a></a>
+# Features
 ### **Existing Features**
 
 * Registration functionality
@@ -334,14 +382,6 @@ The wireframes created below are in details of each page of the website. There w
 A blog can be imported then the wireframe below will show the layout that would be desired for the blog.
 ![image](https://user-images.githubusercontent.com/58527807/150329153-f4fb6897-8c89-465a-b8e6-d9be8fd63d26.png)
 ![image](https://user-images.githubusercontent.com/58527807/150329236-c2da3bf7-8a27-4dee-a919-325a342ad7ad.png)
-
-
-
-
-
-
-
-
 
 
 ### **Profile Product**
