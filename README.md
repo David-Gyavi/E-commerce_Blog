@@ -163,7 +163,148 @@ The reason why I choose Materiaize is mainly due to the various features they of
 <a></a>
 
 <a></a>
+# Features
 
+## Implemented Features.
+
+**Navbar**
+
+-   The navbar has the search bar implemented so the user can search at all times when required to find the item they want. The users can use keywords that will help with the search.
+-   The navbar has collapsible options available when selecting different options available e.g. products.
+-   The navbar is fixed this will be a better user experience when navigation via the website.
+-   The main site logo links the page back to the home screen if the user wants that option to start from the beginning of the website.
+-   When the user’s login the dropdown for my account is different on the website e.g. logout view history to register and login.
+-   The users also see the items in the basket and the amount it’s going to cost so they can keep track of the website.
+-   If the user selects one of the dropdowns menus, they will have access to the list of options the hover ability has not been implemented for this option to make sure the site is cleaner and the users only get the options they want when selected.
+![image](https://user-images.githubusercontent.com/58527807/150335824-d2ef8d59-b47b-4239-956d-2ace97de27f5.png)
+On mobile devices the navbar is more consolidated and some options are placed into a sidebar menu.
+
+![image](https://user-images.githubusercontent.com/58527807/150336490-c27887f7-0beb-48ea-86e1-fe3b9f989bd9.png)
+### Promo bar
+![image](https://user-images.githubusercontent.com/58527807/150336747-c2df89e5-e91d-4168-9570-81d7aa4bb209.png)
+
+### Home Page
+Below the navbar is a promo bar. It contains product sorting dropdown menus and a promotional text; at this time, it is FREE DELIVERY ON ORDERS OVER £50!
+-   The home page has a Orange picture for the background available on the website for interest of potential customers and a link that goes to that web page which is a blck button and  white text for good attraction.
+-   Users can select all the options from the drop downs in the nav bar section.
+-   Contact details have been added for the website if required to get in touch.
+-   The text adjusts to be full width on mobile devices so the SHOP NOW button is still in view
+
+![image](https://user-images.githubusercontent.com/58527807/150337680-c8202e74-eb49-416b-a7db-77ce15705db2.png)
+
+### Search Bar
+
+-   The search page displays all products when using keywords associated with the items.
+-   The search results will display the number of items it has found.
+-   The products will be displayed as cards, as per the product views.
+-   For small devices the search icon makes the search input appear so the user can have almost the full width r entering their search terms.
+
+![image](https://user-images.githubusercontent.com/58527807/150341704-810dd90a-229f-4978-b174-e780af7f8d11.png)
+
+### Product List Page
+-   The product views contain a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+-   This allows users to return to the all products view if currently viewing a specific category.
+-   There is an available sorting button on the website that allows users to display products by price, Rating, Category or All Products.
+-   The users can action a rating to the product which will implement the rating of the item.
+-   If the card is selected the image will pull up the product information.
+-   Number of items in a row is responsive.
+-   
+ ### Product Detail Page
+ - Breadcrumbs has been implemented into the product details view. This will improve the navigation of the website.
+- This makes it easier for users to return to the all-products page links and selected criteria
+- When the user selects the item all the details are displayed the same for easy reading and navigating purposes.
+- The product detail pages show the data from the list page, with the addition of a detailed description.
+- A select list to enable users to select the size of product that they wish to purchase.
+- The user has the access to return to the whole products page if they choose to use the ‘back’ button on the item page.
+- The user can select as many items as they choose with the quantity selector on the
+- There is a add to basket button once the user confirms the number of items they want to purchase.
+
+### Bag Layer
+The basket layer appears below the cart icon if a user adds an item to their bag. It summarizes what the user has purchased.
+
+![image](https://user-images.githubusercontent.com/58527807/150417096-8f9fa889-e918-40f4-9fec-7fbe572d0295.png)
+### Bag Page
+-   If there are no products in the bag and the user clicks on the icon, the user will have the option to return to the whole products page.
+-   When an item has been added to the bag the user will get a notification displayed.
+-   The user will have the item displayed providing the title, cost and quantity on the page
+-   The bag will provide the user with the total amount of the products accumulated before checking out
+-   The items will display all the information horizontally
+-   The quantity the user has added can be edited if required.
+-   The user can add multiple items of the same product when updated this will notify the user this has been complete with the cost.
+-   The user can also remove the items from the basket if they no longer wish to purchase the item
+-   The total cost will be displayed at the bottom of the page with any delivery charges included
+-   The user can return to the home page with all products at any point even if there are items in the basket.
+-   
+![image](https://user-images.githubusercontent.com/58527807/150411960-1353584d-781e-4384-b92f-e4ab63a1ad29.png)
+
+### Checkout Page
+
+-   Checkout page request user contact details when checking out. Name, delivery details and card information.
+-   The items will display with the product, quantity and total cost
+-   The user can adjust the webpage if they wish to change the products before finalizing the order
+-   Users can create an account if they wish to do so by clicking the link available
+-   Users can login from the checkout page if they haven’t done so already
+-   There is an order for a user to complete with their details & delivery details (prepopulated if already saved against the user profile).
+-   The users can finalise the payment using the attached stripe method by inputting the details (Education purposes no money will be taken)
+-   Once the user has finalized the order, they can return to the products page by clicking the deals button
+-   Users will get a notification and email to inform them they have purchased the item (education purposes)
+<a></a>
+
+
+### Product Admin
+
+Superusers can edit or deleted, and add products due to administration access
+
+#### Add Product Page
+
+This page is found from an admin only option under the My Account Menu
+
+![image](https://user-images.githubusercontent.com/58527807/150418221-9e219632-6f8d-4dfe-8baf-79f832ce37b2.png)
+
+The page has the ability for the user to enter a new product.
+
+The user sets the following fields
+
+-  Category – drop down of existing categories defaulted to first value
+
+-  Sku – option text entry
+
+-  Name – required text entry
+
+-  Description – required text field
+
+-  Has Sizes – drop down defaulted to No
+
+-  Price – required
+
+-  Rating – optional number
+
+-  Image url -optional
+
+-  Image chooser -optional
+
+![image](https://user-images.githubusercontent.com/58527807/150418762-27c0c2eb-ae6c-4ab5-ae8c-ae8153b46f50.png)
+
+### Edit Product Page
+This page prepopulates the product information form and allows the user to change the product’s data
+
+![image](https://user-images.githubusercontent.com/58527807/150420094-fdf11bee-537d-472a-8a44-abf259ddf473.png)
+
+### Delete Product Button
+
+The delete product button ideally would bring up a warning layer, but right now it only flashes a message
+
+![image](https://user-images.githubusercontent.com/58527807/150420833-d04a8f44-2271-4e39-af49-655c0f49d2a6.png)
+
+
+
+
+
+[Back to Top](#Features)
+
+
+<a></a>
+# Features
 ### **Existing Features**
 
 * Registration functionality
@@ -316,6 +457,24 @@ Feedback provided to the user stands out nicely.
 
 * **Verdict**    
 The test has passed all the criteria and works like planned.
+
+## Wireframes
+
+Making my wireframes I just used hand sketch frameworks was perfect for designing the website. Once the idea was there it was just piecing the website together to help see what it could look like. Original method was pen and paper. And I went on using the same to implement in real world If any changes are implemented then I can discuss the changes from the original idea and show how I&#39;ve improved the design. The designed first draft will have amends and improvements where necessary. This is part of an ongoing improvement idea. This will help when designing making the mods and amends where necessary.
+
+The wireframes created below are in details of each page of the website. There will be some tools showing the admin side but the main focus is the website design. Once the web design pages are working correctly and full functional. The websites will be provided in full and example explained about any changes made to the design if enough time is available. The website images will show evidence of the wireframes compared to the final outlook.
+### Desktop
+![image](https://user-images.githubusercontent.com/58527807/150325865-d4da8718-b8e1-4f95-90c9-eeb6b9251a95.png)
+![image](https://user-images.githubusercontent.com/58527807/150325980-3d689cd6-e01e-4815-838c-a79ba843280e.png)
+![image](https://user-images.githubusercontent.com/58527807/150326330-3ad8adaa-cae4-4687-9489-50d9b9852557.png)
+![image](https://user-images.githubusercontent.com/58527807/150326379-3ad82edc-bc22-477c-948b-43f6cea66ca8.png)
+![image](https://user-images.githubusercontent.com/58527807/150327061-be22458f-76c6-4762-80d8-94bdee98609f.png)
+![image](https://user-images.githubusercontent.com/58527807/150327192-faa0c6dc-a8bb-49d9-8f85-c3a1dbf5d571.png)
+![image](https://user-images.githubusercontent.com/58527807/150327248-37f05101-6458-4f76-b40b-8de89245d62a.png)
+
+A blog can be imported then the wireframe below will show the layout that would be desired for the blog.
+![image](https://user-images.githubusercontent.com/58527807/150329153-f4fb6897-8c89-465a-b8e6-d9be8fd63d26.png)
+![image](https://user-images.githubusercontent.com/58527807/150329236-c2da3bf7-8a27-4dee-a919-325a342ad7ad.png)
 
 
 ### **Profile Product**
@@ -763,6 +922,8 @@ Then after I had to create an account in AWS environment where by I could upload
 This project can be ran locally by following the following steps: (
 I used Gitpod for development, so the following steps will be specific to Gitpod. 
 You will need to adjust them depending on your IDE. You can find more information about installing packages using pip and virtual environments [here](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+
+## Requirements
 
 
 To clone the project: 
