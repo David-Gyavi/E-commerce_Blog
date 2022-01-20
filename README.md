@@ -198,16 +198,108 @@ Below the navbar is a promo bar. It contains product sorting dropdown menus and 
 -   The search results will display the number of items it has found.
 -   The products will be displayed as cards, as per the product views.
 -   For small devices the search icon makes the search input appear so the user can have almost the full width r entering their search terms.
--   
-![image](https://user-images.githubusercontent.com/58527807/150340311-b4ee1f6d-6c4a-462a-93de-7b8a819c21d1.png)
+
 ![image](https://user-images.githubusercontent.com/58527807/150341704-810dd90a-229f-4978-b174-e780af7f8d11.png)
 
+### Product List Page
+-   The product views contain a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+-   This allows users to return to the all products view if currently viewing a specific category.
+-   There is an available sorting button on the website that allows users to display products by price, Rating, Category or All Products.
+-   The users can action a rating to the product which will implement the rating of the item.
+-   If the card is selected the image will pull up the product information.
+-   Number of items in a row is responsive.
+-   
+ ### Product Detail Page
+ - Breadcrumbs has been implemented into the product details view. This will improve the navigation of the website.
+- This makes it easier for users to return to the all-products page links and selected criteria
+- When the user selects the item all the details are displayed the same for easy reading and navigating purposes.
+- The product detail pages show the data from the list page, with the addition of a detailed description.
+- A select list to enable users to select the size of product that they wish to purchase.
+- The user has the access to return to the whole products page if they choose to use the ‘back’ button on the item page.
+- The user can select as many items as they choose with the quantity selector on the
+- There is a add to basket button once the user confirms the number of items they want to purchase.
 
+### Bag Layer
+The basket layer appears below the cart icon if a user adds an item to their bag. It summarizes what the user has purchased.
+
+![image](https://user-images.githubusercontent.com/58527807/150417096-8f9fa889-e918-40f4-9fec-7fbe572d0295.png)
+### Bag Page
+-   If there are no products in the bag and the user clicks on the icon, the user will have the option to return to the whole products page.
+-   When an item has been added to the bag the user will get a notification displayed.
+-   The user will have the item displayed providing the title, cost and quantity on the page
+-   The bag will provide the user with the total amount of the products accumulated before checking out
+-   The items will display all the information horizontally
+-   The quantity the user has added can be edited if required.
+-   The user can add multiple items of the same product when updated this will notify the user this has been complete with the cost.
+-   The user can also remove the items from the basket if they no longer wish to purchase the item
+-   The total cost will be displayed at the bottom of the page with any delivery charges included
+-   The user can return to the home page with all products at any point even if there are items in the basket.
+-   
+![image](https://user-images.githubusercontent.com/58527807/150411960-1353584d-781e-4384-b92f-e4ab63a1ad29.png)
+
+### Checkout Page
+
+-   Checkout page request user contact details when checking out. Name, delivery details and card information.
+-   The items will display with the product, quantity and total cost
+-   The user can adjust the webpage if they wish to change the products before finalizing the order
+-   Users can create an account if they wish to do so by clicking the link available
+-   Users can login from the checkout page if they haven’t done so already
+-   There is an order for a user to complete with their details & delivery details (prepopulated if already saved against the user profile).
+-   The users can finalise the payment using the attached stripe method by inputting the details (Education purposes no money will be taken)
+-   Once the user has finalized the order, they can return to the products page by clicking the deals button
+-   Users will get a notification and email to inform them they have purchased the item (education purposes)
 <a></a>
 
 
+### Product Admin
 
-[Back to Top](#table-of-contents)
+Superusers can edit or deleted, and add products due to administration access
+
+#### Add Product Page
+
+This page is found from an admin only option under the My Account Menu
+![image](https://user-images.githubusercontent.com/58527807/150418221-9e219632-6f8d-4dfe-8baf-79f832ce37b2.png)
+
+The page has the ability for the user to enter a new product.
+
+The user sets the following fields
+
+-  Category – drop down of existing categories defaulted to first value
+
+-  Sku – option text entry
+
+-  Name – required text entry
+
+-  Description – required text field
+
+-  Has Sizes – drop down defaulted to No
+
+-  Price – required
+
+-  Rating – optional number
+
+-  Image url -optional
+
+-  Image chooser -optional
+
+![image](https://user-images.githubusercontent.com/58527807/150418762-27c0c2eb-ae6c-4ab5-ae8c-ae8153b46f50.png)
+
+### Edit Product Page
+This page prepopulates the product information form and allows the user to change the product’s data
+
+![image](https://user-images.githubusercontent.com/58527807/150420094-fdf11bee-537d-472a-8a44-abf259ddf473.png)
+
+### Delete Product Button
+
+The delete product button ideally would bring up a warning layer, but right now it only flashes a message
+
+![image](https://user-images.githubusercontent.com/58527807/150420833-d04a8f44-2271-4e39-af49-655c0f49d2a6.png)
+
+
+
+
+
+[Back to Top](#Features)
 
 
 <a></a>
