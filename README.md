@@ -923,6 +923,8 @@ This project can be ran locally by following the following steps: (
 I used Gitpod for development, so the following steps will be specific to Gitpod. 
 You will need to adjust them depending on your IDE. You can find more information about installing packages using pip and virtual environments [here](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
+## Requirements
+
 
 To clone the project: 
 
