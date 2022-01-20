@@ -317,6 +317,32 @@ Feedback provided to the user stands out nicely.
 * **Verdict**    
 The test has passed all the criteria and works like planned.
 
+## Wireframes
+
+Making my wireframes I just used hand sketch frameworks was perfect for designing the website. Once the idea was there it was just piecing the website together to help see what it could look like. Original method was pen and paper. And I went on using the same to implement in real world If any changes are implemented then I can discuss the changes from the original idea and show how I&#39;ve improved the design. The designed first draft will have amends and improvements where necessary. This is part of an ongoing improvement idea. This will help when designing making the mods and amends where necessary.
+
+The wireframes created below are in details of each page of the website. There will be some tools showing the admin side but the main focus is the website design. Once the web design pages are working correctly and full functional. The websites will be provided in full and example explained about any changes made to the design if enough time is available. The website images will show evidence of the wireframes compared to the final outlook.
+### Desktop
+![image](https://user-images.githubusercontent.com/58527807/150325865-d4da8718-b8e1-4f95-90c9-eeb6b9251a95.png)
+![image](https://user-images.githubusercontent.com/58527807/150325980-3d689cd6-e01e-4815-838c-a79ba843280e.png)
+![image](https://user-images.githubusercontent.com/58527807/150326330-3ad8adaa-cae4-4687-9489-50d9b9852557.png)
+![image](https://user-images.githubusercontent.com/58527807/150326379-3ad82edc-bc22-477c-948b-43f6cea66ca8.png)
+![image](https://user-images.githubusercontent.com/58527807/150327061-be22458f-76c6-4762-80d8-94bdee98609f.png)
+![image](https://user-images.githubusercontent.com/58527807/150327192-faa0c6dc-a8bb-49d9-8f85-c3a1dbf5d571.png)
+![image](https://user-images.githubusercontent.com/58527807/150327248-37f05101-6458-4f76-b40b-8de89245d62a.png)
+
+A blog can be imported then the wireframe below will show the layout that would be desired for the blog.
+![image](https://user-images.githubusercontent.com/58527807/150329153-f4fb6897-8c89-465a-b8e6-d9be8fd63d26.png)
+![image](https://user-images.githubusercontent.com/58527807/150329236-c2da3bf7-8a27-4dee-a919-325a342ad7ad.png)
+
+
+
+
+
+
+
+
+
 
 ### **Profile Product**
 
