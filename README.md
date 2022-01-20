@@ -1,6 +1,6 @@
 # **E-Commerce-Blog**
 
-![image] src=(https://user-images.githubusercontent.com/58527807/150208213-2d583321-9515-4f11-89d8-27250ed64183.png)
+![image](https://user-images.githubusercontent.com/58527807/150208213-2d583321-9515-4f11-89d8-27250ed64183.png)
 
 ## **Goal for this project**
 
@@ -325,9 +325,9 @@ The test has passed all the criteria and works like planned.
 * **Plan**  
 The user should be able to created a profile for the product in which it can fill in various information. 
 Possible input fields should be the name of the product, description and an image of the product. 
-A summary of the dog profile will be displayed on the dashboard overview. 
+A summary of the ecommerce profile will be displayed on the dashboard overview. 
 
-* **Implementation**  
+* **Implementation** 
 I have created a form with the various input fields where the user can fill in the information. 
 I have only made the product_name field required as for the other fields, the user might not want to fill in this information. Some user might not know the date of birth etc so he/she might not want to fill this in. 
 For the image, I worked with an url that has to be filled in. The product image can be easily uploaded by user from its device and/or cloud.
