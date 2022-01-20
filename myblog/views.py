@@ -25,13 +25,12 @@ class AddCommentView(CreateView):
 
     def form_valid(self, form):
         post = Post.objects.filter(slug=self.kwargs['slug'])
-        user = False
-       
-       
-            # assuming user.username = admin is the superuser,
+
+
+# assuming user.username = admin is the superuser,
         form.instance.comment_owner = self.request.user
         form.instance.post_id = post[0].id
-        return super().form_valid(form) 
+        return super().form_valid(form)
 
     success_url = reverse_lazy("myblog")
 
