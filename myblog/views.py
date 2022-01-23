@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -18,6 +20,8 @@ class PostDetail(DetailView):
     template_name = 'myblog/post_detail.html'
 
 
+@method_decorator(login_required(
+                            login_url='/accounts/login/'), name='dispatch')
 class AddCommentView(CreateView):
     model = Comment
     form_class = CommentForm
@@ -39,4 +43,11 @@ class EditCommentView(UpdateView):
     model = Comment
     form_class = CommentForm
     template_name = 'myblog/edit_comment.html'
+    success_url = reverse_lazy("myblog")
+
+
+class ShowAllComments(ListView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'myblog/post_detail.html'
     success_url = reverse_lazy("myblog")
