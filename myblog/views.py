@@ -44,10 +44,3 @@ class EditCommentView(UpdateView):
     form_class = CommentForm
     template_name = 'myblog/edit_comment.html'
     success_url = reverse_lazy("myblog")
-
-
-class ShowAllComments(ListView):
-    model = Comment
-    form_class = CommentForm
-    template_name = 'myblog/post_detail.html'
-    success_url = reverse_lazy("myblog")
