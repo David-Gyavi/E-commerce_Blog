@@ -4,12 +4,16 @@ asgiref==3.4.1
 async-timeout==4.0.1
 boto3==1.20.23
 botocore==1.23.23
+confusable-homoglyphs==3.2.0
 dj-database-url==0.5.0
 Django==3.2.9
 django-allauth==0.45.0
 django-countries==7.2.1
 django-countries-with-calling-codes==0.1.1
 django-crispy-forms==1.13.0
+django-extensions==3.1.5
+django-filter==21.1
+django-registration==3.2
 django-storages==1.12.3
 frozenlist==1.2.0
 geoip2==4.5.0
