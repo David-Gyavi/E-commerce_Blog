@@ -16,17 +16,26 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='post',
             name='author',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='myblog_posts', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='myblog_posts', to=settings.AUTH_USER_MODEL),
         ),
         migrations.CreateModel(
             name='Comment',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=255)),
                 ('body', models.TextField()),
                 ('date', models.DateTimeField(auto_now_add=True)),
-                ('comment_owner', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comment_owner', to=settings.AUTH_USER_MODEL)),
-                ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='myblog.post')),
+                ('comment_owner', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='comment_owner',
+                    to=settings.AUTH_USER_MODEL)),
+                ('post', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    related_name='comments', to='myblog.post')),
             ],
         ),
     ]
