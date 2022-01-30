@@ -1,6 +1,6 @@
 # **E-Commerce-Blog**
 
-![image](https://user-images.githubusercontent.com/58527807/150208213-2d583321-9515-4f11-89d8-27250ed64183.png)
+![image]("https://user-images.githubusercontent.com/58527807/151682381-972643fc-a64a-4ef8-a0e3-996dcad403e7.png)
 
 ## **Goal for this project**
 
