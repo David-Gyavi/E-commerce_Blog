@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
 <div class="container">
    <div class="row">
@@ -24,6 +23,7 @@
                      <p>{{ comment.body }}</p>
                      {% if comment.comment_owner == request.user %}
                      <a href="{% url 'update_comment' pk=comment.id %}" class ="btn-secondary btn"> Edit Comment</a>
+                     <a href="{% url 'delete_comment' pk=comment.id %}" class ="btn-secondary btn"> Delete Comment</a>
                      {% endif %}
                      <hr>
                   </div>
