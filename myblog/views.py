@@ -1,8 +1,6 @@
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
-from django.views.generic import (
-    ListView, DetailView, CreateView, UpdateView, DeleteView
-    )
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from .models import Post, Comment
