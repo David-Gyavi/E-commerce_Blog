@@ -365,7 +365,150 @@ Collects comment from user.
 * Allows user to update their comment
 ![image](https://user-images.githubusercontent.com/58527807/152134226-5400075a-ef2b-45d1-9a6c-66e28c961da0.png)
 
+## Testing Blog
+### CSS Validation
+### Blog List page
+![image](https://user-images.githubusercontent.com/58527807/152141792-47239179-d69a-48d1-a4cc-e9888c7a2649.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
 
+## Blog Detail  Page
+![image](https://user-images.githubusercontent.com/58527807/152144634-0bb17a66-cce4-4bbb-990b-210545b6d69c.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Sign Up Page
+![image](https://user-images.githubusercontent.com/58527807/152145273-0938e5ef-7d33-4a28-9a71-a927ca81fe07.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Password Reset
+![image](https://user-images.githubusercontent.com/58527807/152145686-1f713904-fdd0-4180-8a9e-eb5e4f7e2aaa.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Add Comment
+![image](https://user-images.githubusercontent.com/58527807/152145993-f2cc6730-0116-413f-be90-9fd8f06c4388.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Update Comment
+![image](https://user-images.githubusercontent.com/58527807/152146440-9a28481a-c2a4-4805-bf97-8245069c8028.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Product List page
+![image](https://user-images.githubusercontent.com/58527807/152146835-0e7fcfb4-14ae-4c1a-a078-1a0078268592.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## Product Detail page
+![image](https://user-images.githubusercontent.com/58527807/152147060-d4db4385-824c-41d4-aff4-4fd499191a9e.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## BAG Summary Page
+![image](https://user-images.githubusercontent.com/58527807/152147228-f7937ccc-9309-4efa-8220-178f14673484.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## CHECKOUT PAGE (PAYMENT COLLECTION)
+![image](https://user-images.githubusercontent.com/58527807/152147628-8d7ca2ac-ec02-4c51-bc14-8d5fcafe8ea1.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## CHECKOUT SUCCESS PAGE
+![image](https://user-images.githubusercontent.com/58527807/152147839-59b063b8-6823-4601-8989-c35490e1c035.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## PROFILE PAGE
+![image](https://user-images.githubusercontent.com/58527807/152148005-cc6f7aae-c8c4-498c-a44f-2c59c5378a44.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
+
+## ORDER DETAIL PAGE
+![image](https://user-images.githubusercontent.com/58527807/152148297-386d0bd5-7869-4fdb-a693-1550367905f6.png)
+### Manual
+- [ ] looks good desktop
+- [ ] looks good tablet landscape
+- [ ] looks good tablet portrait
+- [ ] looks good phone portrait
+- [ ] no console errors
+- [ ] navigation goes where it should mobile
+- [ ] navigation goes where it should desktop
 
 
 [Back to Top](#table-of-contents)
@@ -410,6 +553,9 @@ Collects comment from user.
 <a></a>
 
 ## **Testing**
+
+
+
 
 ### **Registration**
 
