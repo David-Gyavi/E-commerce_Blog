@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from .models import Post, Comment
@@ -46,7 +46,9 @@ class EditCommentView(UpdateView):
     success_url = reverse_lazy("myblog")
 
 
-class DeleteCommentView(UpdateView):
+@method_decorator(login_required(
+                            login_url='/accounts/login/'), name='dispatch')
+class DeleteCommentView(DeleteView):
     model = Comment
     form_class = CommentForm
     template_name = 'myblog/delete_comment.html'
