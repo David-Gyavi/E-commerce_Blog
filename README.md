@@ -330,6 +330,42 @@ The delete product button ideally would bring up a warning layer, but right now 
 * When the user has added their first log, I would like to remember the chosen metrics for any futher logs so they don't have to update this every time they add a log.
 * This would be done through profile preferences or store the data in a cookie. 
 
+## Blog Pages
+
+* The blogs page lists out all blogs from most recent to oldest.
+* Blogs page has Read more Button that brings user to Post Detail Page.
+
+
+### Blog List Page
+![image](https://user-images.githubusercontent.com/58527807/152131627-06ef13eb-4732-45ce-8c83-39f27b9b32ce.png)
+
+### Blogs Detail Page
+
+* This page shows the blog details.
+* There is a comment section that will list out any comments or just an Add Comment button
+* If a user is logged in and has written a comment, they will see an edit comment button
+* If a user is the owner of a comment, they can edit their comments
+* If there are more than 3 comments a Show all Comments button will be visible so the page isn’t too cluttered.
+* Only the admin can edit comments made by unauthenticated users
+
+![image](https://user-images.githubusercontent.com/58527807/152132354-e8bc160f-a3de-4813-8c43-58593cd126b3.png)
+
+### Add Comment Page
+Add comment page can be accessed by any user
+Collects name of user to attribute the comment to, does not have to be tied to a real user
+Collects comment from user.
+
+![image](https://user-images.githubusercontent.com/58527807/152132989-ed6c8c6e-4e60-410d-98c8-58833780e617.png)
+
+### Add Edit Comment Page
+
+* Edit comment page can be accessed by user that owns the comment
+* Prepopulates existing information
+* Allows user to update name of user to attribute the comment to, does not have to be tied to a real user
+* Allows user to update their comment
+![image](https://user-images.githubusercontent.com/58527807/152134226-5400075a-ef2b-45d1-9a6c-66e28c961da0.png)
+
+
 
 
 [Back to Top](#table-of-contents)
