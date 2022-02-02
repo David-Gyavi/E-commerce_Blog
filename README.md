@@ -659,6 +659,25 @@ A blog can be imported then the wireframe below will show the layout that would 
 ![image](https://user-images.githubusercontent.com/58527807/150329236-c2da3bf7-8a27-4dee-a919-325a342ad7ad.png)
 
 
+### phone
+#### Home page
+![image](https://user-images.githubusercontent.com/58527807/152216094-a57453bb-01f0-48d3-9cd7-5a86f23e2902.png)
+#### Product search result
+![image](https://user-images.githubusercontent.com/58527807/152216178-ec47cd3c-14de-40da-83f3-a25dc732d001.png)
+#### Register Page
+![image](https://user-images.githubusercontent.com/58527807/152216416-58bba2a6-e5b6-40a2-a655-027c8d97121c.png)
+#### Login Page
+![image](https://user-images.githubusercontent.com/58527807/152216416-58bba2a6-e5b6-40a2-a655-027c8d97121c.png)
+#### Shopping Bag:
+![image](https://user-images.githubusercontent.com/58527807/152218625-0e34a027-093b-44b2-ae1b-fb614bcb8c2c.png)
+#### Check Out
+![image](https://user-images.githubusercontent.com/58527807/152218777-d737307e-8519-4d32-b21e-b865c93b06ab.png)
+#### Order Complete
+![image](https://user-images.githubusercontent.com/58527807/152218693-b4b0b747-5c08-4edb-a5d2-c778b4ffdff0.png)
+#### Product View
+![image](https://user-images.githubusercontent.com/58527807/152218924-298a3c41-6a3d-484c-894e-570a346992c8.png)
+
+
 ### **Profile Product**
 
 #### User story: As a user, I would like to have a personal profile for my product. 
