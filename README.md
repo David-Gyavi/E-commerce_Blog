@@ -15,6 +15,15 @@ find precisely what you wanted to do. So here you will be able to register and a
 
 Thanks for visiting my project.
 
+E-Commerce_Blog Website: https://kellyd-ecommerce-blog.herokuapp.com/
+
+E-Commerce_Blog is an ecommerce website where customer can buy Laptops and other accessories via the website.
+The website will provide easy access and purchasing made simple with a secure confirmation order.
+The users will be able to provide reviews on products and rate them also this will help with the most popular items on the website.
+The users will be able to provide like/dislike in relation to products and see other shopper's input as this will help with identify the most popular items on the website.
+The website will provide the latest Laptops with excellent prices. The website will allow users to register with the website and make purchases and store the order information.
+The site hosts a celebrity blog to help engage users and upsell products. Users can add comments to these blogs and update their entries if they realize they have entered a typo. Blog entries could also be used to announce special deals.
+
 <a></a>
 
 ## Table of contents 
@@ -136,7 +145,7 @@ The reason for this is that for this project, the functionality is much more imp
 Like I mentioned before, But all the colors I have used mostlty have followed that of the Ado-Botique project colors that fit well with the feeling of a Ecommerce site.
 Below I will explain more why I choose the various colors and for what I will be using them.
 
-![Color Palette](wireframes/color-palette.png)
+![image]<img width="442" alt="image" src="https://user-images.githubusercontent.com/58527807/152235604-6c40b685-eead-464d-9373-0c0452079f27.png)
 
 
 I have used a contrast checker in order to make sure that the contrast is sufficient.
