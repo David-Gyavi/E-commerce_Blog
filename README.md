@@ -145,7 +145,7 @@ The reason for this is that for this project, the functionality is much more imp
 Like I mentioned before, But all the colors I have used mostlty have followed that of the Ado-Botique project colors that fit well with the feeling of a Ecommerce site.
 Below I will explain more why I choose the various colors and for what I will be using them.
 
-![image]<img width="442" alt="image" src="https://user-images.githubusercontent.com/58527807/152235604-6c40b685-eead-464d-9373-0c0452079f27.png)
+![image](https://user-images.githubusercontent.com/58527807/152235604-6c40b685-eead-464d-9373-0c0452079f27.png)
 
 
 I have used a contrast checker in order to make sure that the contrast is sufficient.
