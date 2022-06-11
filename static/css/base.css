@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/background_design.png') no-repeat center center fixed;
+    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -44,6 +44,12 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -61,6 +67,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 .overlay {
@@ -88,9 +98,15 @@ a.category-badge > span.badge:hover {
 
 .btt-link,
 .update-link,
-.remove-item {    
+.remove-item {
     cursor: pointer;
 }
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -107,6 +123,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -155,6 +172,15 @@ a.category-badge > span.badge:hover {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /* Allauth form formatting */
@@ -209,15 +235,6 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
-}
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
 }
 
 /* Product Form */
