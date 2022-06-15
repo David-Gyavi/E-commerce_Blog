@@ -4,7 +4,7 @@
 
 ## **Goal for this project**
 
-Have of you ever gone to a store full of computers and all computer accessories, reaching there when you even don't know what you want to take. Being asked lots of quetions but is 
+Have you ever gone to a store full of computers and all computer accessories, reaching there when you even don't know what you want to take. Being asked lots of quetions but is 
 more of beter to make it easire for people to access each and every stuff they would like to get or to buy while sitted at home on there computers or other gadgets to access what ever they want.
 This case they ask you which type of part and or computer you would like to take, which specifications would you like yet you know nothing but in this case everything is easy to buy online.
 
